@@ -105,7 +105,7 @@ def user_login(request):
                 return HttpResponseRedirect(reverse('index'))
             else:
                 # If account is not active:
-                return HttpResponse("Your account is not active.")
+                return HttpResponse("Your account is not active right now.")
         else:
             print("Someone tried to login and failed.")
             print("They used username: {} and password: {}".format(username,password))
